@@ -1,42 +1,38 @@
-# AI rules
+# Guidelines for AI Assistants
 
-Use our AI rules to get the most out of Nuxt UI when using AI tools like Cursor, Windsurf, Claude Code, and others.
+Leverage the full power of Nuxt UI in your AI-powered workflow. These guidelines are designed to help AI coding assistants like Cursor, Windsurf, Claude Code, and others understand the best practices for working with the Nuxt UI component library.
 
-## Installation
+## Getting Started
 
-You can download the latest version of Hugo's AI rules from the [rules folder](https://github.com/hugorcd/nuxt-ui-rules/blob/main/rules/nuxt-ui.md?plain=1). Copy and paste these into your prompts as needed, or set them up in your AI tool of choice.
+You can grab the latest version of the guidelines from the [rules folder](https://github.com/hugorcd/nuxt-ui-rules/blob/main/rules/nuxt-ui.md?plain=1). From there, you can either copy and paste them into your prompts on a case-by-case basis or integrate them directly into your preferred AI assistant's configuration for persistent access.
 
 ## Using with Cursor
 
-To add these rules to Cursor, create a new file at `.cursor/rules/nuxt-ui.mdc`, and add this header to the new file (adjusting the file extensions if necessary):
+To integrate these guidelines with Cursor, follow these steps:
 
-```md
----
-name: nuxt-ui
-description: Best practices for using and upgrading Nuxt UI
-globs: ["**/*.{js,ts,css,html,vue}"]
-tags:
-  - nuxt-ui
-  - nuxt
-  - library
-  - ui
----
-```
+1.  Start by creating a new file named `nuxt-ui.mdc` inside the `.cursor/rules/` directory of your project.
 
-Finally copy and paste the [rules](https://github.com/hugorcd/nuxt-ui-rules/blob/main/rules/nuxt-ui.md?plain=1) into the end of the file.
+2.  Populate the new file with the following header. Be sure to adjust the `globs` property to match the file types you are working with.
+
+    ```md
+    ---
+    name: nuxt-ui
+    description: Best practices for using and upgrading Nuxt UI
+    globs: ["**/*.{js,ts,css,html,vue}"]
+    tags:
+      - nuxt-ui
+      - nuxt
+      - library
+      - ui
+    ---
+    ```
+
+3.  To complete the setup, append the full content of the [guidelines file](https://github.com/hugorcd/nuxt-ui-rules/blob/main/rules/nuxt-ui.md?plain=1) to the end of your newly created `nuxt-ui.mdc`.
 
 ## Using with Claude Code
 
-### Adding the rules as needed
+You have two main options for using these guidelines with Claude Code.
 
-If you want fine-grained control, store the [rules](https://github.com/hugorcd/nuxt-ui-rules/blob/main/rules/nuxt-ui.md?plain=1) in a dedicated rules folder like `rules/nuxt-ui.md`. Then, whenever you want to make your current Claude Code session an expert in Nuxt UI, `@`-mention the rules to make Claude read it:
+### On-Demand Context
 
-```
-╭──────────────────────────────────────────────────────────────────────────────╮
-│ > read @rules/nuxt-ui.md and create a custom accordion                       │
-╰──────────────────────────────────────────────────────────────────────────────╯
-```
-
-### Referencing in your CLAUDE.md file
-
-Copy and paste the [rules](https://github.com/hugorcd/nuxt-ui-rules/blob/main/rules/nuxt-ui.md?plain=1) directly into your `CLAUDE.md` file. Claude Code will now read them for every new session.
+For more granular control, place the [guidelines file](https://github.com/hugorcd/nuxt-ui-rules/blob/main/rules/nuxt-ui.md?plain=1) in a designated project directory, for instance, `rules/nuxt-ui.md`. Then, anytime you need Claude to be aware of Nuxt UI best practices for a specific task, simply `@`-mention the file path in your prompt to load it into the current session's context.

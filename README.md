@@ -14,7 +14,7 @@ To add these rules to Cursor, create a new file at `.cursor/rules/nuxt-ui.mdc`, 
 ---
 name: nuxt-ui
 description: Best practices for using and upgrading Nuxt UI
-globs: ["**/*.{js,ts,jsx,tsx,mdx,css,html,vue,svelte,astro}"]
+globs: ["**/*.{js,ts,css,html,vue}"]
 tags:
   - nuxt-ui
   - nuxt

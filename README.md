@@ -26,13 +26,16 @@ We provide two versions of Nuxt UI rules to fit different needs:
 
 ## Using with Cursor
 
-To integrate these guidelines with Cursor, follow these steps:
+**Option 1 - Via Settings Interface (Recommended)** 🎯
+1. Open Cursor Settings (`Cmd/Ctrl + ,`)
+2. Navigate to **"Rules for AI"** tab
+3. Copy and paste your chosen rule content:
+   - **Complete**: Copy from [nuxt-ui.md](https://github.com/hugorcd/nuxt-ui-rules/blob/main/rules/nuxt-ui.md?plain=1)
+   - **Minimal**: Copy from [nuxt-ui-minimal.md](https://github.com/hugorcd/nuxt-ui-rules/blob/main/rules/nuxt-ui-minimal.md?plain=1)
 
-1.  Create a new file named `nuxt-ui.mdc` inside the `.cursor/rules/` directory of your project.
-
-2.  Copy the complete content from your chosen rule file:
-    - **Complete**: Copy everything from [nuxt-ui.md](https://github.com/hugorcd/nuxt-ui-rules/blob/main/rules/nuxt-ui.md?plain=1)
-    - **Minimal**: Copy everything from [nuxt-ui-minimal.md](https://github.com/hugorcd/nuxt-ui-rules/blob/main/rules/nuxt-ui-minimal.md?plain=1)
+**Option 2 - Via File Configuration**
+1. Create `.cursor/rules/nuxt-ui.mdc` in your project root
+2. Copy your chosen rule content into this file
 
 ## Using with Claude Code
 

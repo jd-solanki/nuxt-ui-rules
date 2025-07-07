@@ -1,0 +1,114 @@
+name: 💡 Rule Improvement
+description: Suggest improvements to existing rules or request new ones
+title: "[Rule] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us improve the Nuxt UI v3 guidelines! Your suggestions make the rules better for everyone.
+
+  - type: dropdown
+    id: improvement-type
+    attributes:
+      label: 🎯 Type of Improvement
+      description: What kind of improvement are you suggesting?
+      options:
+        - Missing rule for new Nuxt UI v3 feature
+        - Unclear or confusing existing rule
+        - Missing examples in existing rule
+        - Rule doesn't work well with specific AI
+        - Add common mistake warning
+        - Improve component documentation
+        - Better TypeScript examples
+        - Performance optimization rule
+        - Accessibility improvement
+        - Other
+    validations:
+      required: true
+
+  - type: dropdown
+    id: rule-section
+    attributes:
+      label: 📖 Rule Section (if applicable)
+      description: Which section of the rules needs improvement?
+      options:
+        - Installation & Setup
+        - Component Renames
+        - Removed Components
+        - Prop Changes
+        - Event Handling
+        - Overlay Patterns
+        - Design System & Tokens
+        - Theming & Styling
+        - Performance Best Practices
+        - TypeScript Integration
+        - Accessibility
+        - Common Mistakes
+        - Examples
+        - Not applicable (new rule)
+        - Other
+
+  - type: textarea
+    id: problem-description
+    attributes:
+      label: 🚨 Problem
+      description: Describe what's missing, unclear, or needs improvement
+      placeholder: e.g., "The overlay pattern section doesn't show how to handle form validation"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: 💡 Proposed Solution
+      description: What would you add or change? Include code examples if possible
+      placeholder: |
+        Describe your proposed improvement...
+        
+        ```vue
+        <!-- Example of improved rule/pattern -->
+        ```
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: ai-testing
+    attributes:
+      label: 🤖 AI Testing
+      description: Have you tested this improvement with AI assistants?
+      options:
+        - label: Tested with Cursor - works well
+        - label: Tested with Claude - works well
+        - label: Tested with ChatGPT - works well
+        - label: Tested with GitHub Copilot - works well
+        - label: Tested with other AI - works well
+        - label: Tested but still has issues
+        - label: Not tested yet
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: 📈 Priority Level
+      description: How important is this improvement?
+      options:
+        - Critical (AI frequently makes this mistake)
+        - High (Common issue affecting many users)
+        - Medium (Useful improvement)
+        - Low (Nice to have)
+    validations:
+      required: true
+
+  - type: input
+    id: nuxt-ui-docs
+    attributes:
+      label: 🔗 Nuxt UI Documentation Reference
+      description: Link to relevant Nuxt UI docs (if applicable)
+      placeholder: https://ui.nuxt.com/...
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📝 Additional Context
+      description: Any other details, related issues, or examples
+      placeholder: Optional - links to related issues, additional examples, etc. 
